@@ -94,60 +94,60 @@ customer-accounts.component.html
 <h3>1. Ajout des Components </h3>
 <h4>Login Component :</h4>
 login.component.ts
-<img src="images/component_login.png">
-<img src="images/component_login1.png">
+<img src="images/component_login.PNG">
+<img src="images/component_login1.PNG">
 login.component.html
-<img src="images/component_loginHTML.png">
+<img src="images/component_loginHTML.PNG">
 <h4>Auth Service :</h4>
 auth.service.ts
-<img src="images/service_auth.png">
-<img src="images/service_auth1.png">
-<img src="images/service_auth2.png">
+<img src="images/service_auth.PNG">
+<img src="images/service_auth1.PNG">
+<img src="images/service_auth2.PNG">
 <h4>Interceptors :</h4>
 app-http.interceptor.ts
-<img src="images/ts_interceptor.png">
+<img src="images/ts_interceptor.PNG">
 l'ajouter dans module app
-<img src="images/module_interceptor.png">
+<img src="images/module_interceptor.PNG">
 <h4>Guards :</h4>
 authorization.guard.ts
-<img src="images/guard_authorization.png">
+<img src="images/guard_authorization.PNG">
 authentication.guard.ts
-<img src="images/guard_authentication.png">
+<img src="images/guard_authentication.PNG">
 <h4>Not-Authorized Component :</h4>
 not-authorized.component.html
-<img src="images/notauto_html.png">
+<img src="images/notauto_html.PNG">
 not-authorized.component.ts
-<img src="images/notauto_ts.png">
+<img src="images/notauto_ts.PNG">
 <h4>Admin Template Component :</h4>
 admin-template.component.html
-<img src="images/html_admintemp.png">
+<img src="images/html_admintemp.PNG">
 admin-template.component.ts
-<img src="images/ts_admintemp.png">
+<img src="images/ts_admintemp.PNG">
 
 <h3>2. Ajout du Cors (Backend)</h3>
-<img src="images/cors_1.png">
-<img src="images/cors_2.png">
-<img src="images/cors_3.png">
+<img src="images/cors_1.PNG">
+<img src="images/cors_2.PNG">
+<img src="images/cors_3.PNG">
 
 <h3>3. Modification de la navbar</h3>
-<img src="images/html_navbar.png">
-<img src="images/html_logout.png">
+<img src="images/html_navbar.PNG">
+<img src="images/html_logout.PNG">
 
 <h3>4. Modification du Routing</h3>
-<img src="images/routing.png">
+<img src="images/routing.PNG">
 
 <h3>5. Résultat</h3>
 Login
-<img src="images/resultat_login.png">
+<img src="images/resultat_login.PNG">
 Se connecter en tant que user
-<img src="images/resultat_user.png">
-<img src="images/resultat_user1.png">
+<img src="images/resultat_user.PNG">
+<img src="images/resultat_user1.PNG">
 Cas où user n'a pas le droit
-<img src="images/resultat_notauthorized.png">
+<img src="images/resultat_notauthorized.PNG">
 Se connecter en tant qu'admin
-<img src="images/resultat_admin.png">
-<img src="images/resultat_admin1.png">
-<img src="images/resultat_admin2.png">
+<img src="images/resultat_admin.PNG">
+<img src="images/resultat_admin1.PNG">
+<img src="images/resultat_admin2.PNG">
 
 
 
