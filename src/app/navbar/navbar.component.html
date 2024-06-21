@@ -10,30 +10,31 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/customers">Customers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/accounts">Accounts</a>
+          <a class="nav-link" routerLink="/admin/accounts">Accounts</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Customers
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/customers">Search customers</a></li>
-            <li><a class="dropdown-item" href="/new-customer">New customer</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLink="/admin/customers">Search customers</a></li>
+            <li *ngIf="authService.roles.includes('ADMIN')"><a class="dropdown-item" routerLink="/admin/new-customer">New customer</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      <ul class="navbar" *ngIf="authService.isAuthenticated==true">
+        <li class="nav-item">
+          <a class="nav-link active" style="color: blue">
+            {{this.authService.username}}
+          </a>
+        </li>
+        <li>
+          <button (click)="handleLogout()" class="btn btn-success">Logout</button>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>

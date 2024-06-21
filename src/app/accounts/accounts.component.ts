@@ -4,6 +4,7 @@ import {AccountsService} from "../services/accounts.service";
 import {catchError, Observable, throwError} from "rxjs";
 import {AccountDetails} from "../model/account.model";
 import {Router} from "@angular/router";
+import {AuthService} from "../services/auth.service";
 
 @Component({
   selector: 'app-accounts',
@@ -18,7 +19,8 @@ export class AccountsComponent implements OnInit{
   operationFormGroup! : FormGroup;
   errorMessage! : string;
   accountId! : string;
-  constructor(private fb : FormBuilder, private accountService: AccountsService, private router : Router) {}
+  constructor(private fb : FormBuilder, private accountService: AccountsService,
+              private router : Router, public authService : AuthService) {}
   ngOnInit(): void {
     this.accountFormGroup = this.fb.group({
       accountId : this.fb.control("")
